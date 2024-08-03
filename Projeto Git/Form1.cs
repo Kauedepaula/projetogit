@@ -16,5 +16,38 @@ namespace Projeto_Git
         {
 
         }
+
+        private void btnsoma_Click(object sender, EventArgs e)
+        {
+            int var1, var2, total;
+            var1 = int.Parse(txValor1.Text);
+            var2 = int.Parse(txValor2.Text);
+
+            total = var1 + var2;
+
+            lblResultado.Text = total.ToString();
+        }
+
+        private void btnmultiplica_Click(object sender, EventArgs e)
+        {
+            int var1, var2, total;
+            var1 = int.Parse(txValor1.Text);
+            var2 = int.Parse(txValor2.Text);
+
+            total = var1 * var2;
+
+            lblResultado.Text = total.ToString();
+        }
+
+        private void btnsubtrai_Click(object sender, EventArgs e)
+        {
+            int var1, var2, total;
+            var1 = int.Parse(txValor1.Text);
+            var2 = int.Parse(txValor2.Text);
+
+            total = var1 - var2;
+
+            lblResultado.Text = total.ToString();
+        }
     }
 }

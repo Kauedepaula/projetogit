@@ -35,6 +35,8 @@
             lblTotal = new Label();
             lblResultado = new Label();
             btnsoma = new Button();
+            btnmultiplica = new Button();
+            btnsubtrai = new Button();
             SuspendLayout();
             // 
             // txValor2
@@ -96,12 +98,35 @@
             btnsoma.TabIndex = 6;
             btnsoma.Text = "Soma";
             btnsoma.UseVisualStyleBackColor = true;
+            btnsoma.Click += btnsoma_Click;
+            // 
+            // btnmultiplica
+            // 
+            btnmultiplica.Location = new Point(123, 161);
+            btnmultiplica.Name = "btnmultiplica";
+            btnmultiplica.Size = new Size(92, 23);
+            btnmultiplica.TabIndex = 7;
+            btnmultiplica.Text = "Multiplica";
+            btnmultiplica.UseVisualStyleBackColor = true;
+            btnmultiplica.Click += btnmultiplica_Click;
+            // 
+            // btnsubtrai
+            // 
+            btnsubtrai.Location = new Point(243, 161);
+            btnsubtrai.Name = "btnsubtrai";
+            btnsubtrai.Size = new Size(92, 23);
+            btnsubtrai.TabIndex = 8;
+            btnsubtrai.Text = "Subtrai";
+            btnsubtrai.UseVisualStyleBackColor = true;
+            btnsubtrai.Click += btnsubtrai_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnsubtrai);
+            Controls.Add(btnmultiplica);
             Controls.Add(btnsoma);
             Controls.Add(lblResultado);
             Controls.Add(lblTotal);
@@ -125,5 +150,7 @@
         private Label lblTotal;
         private Label lblResultado;
         private Button btnsoma;
+        private Button btnmultiplica;
+        private Button btnsubtrai;
     }
 }
